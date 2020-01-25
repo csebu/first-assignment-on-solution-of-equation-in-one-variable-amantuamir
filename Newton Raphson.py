@@ -7,7 +7,7 @@ def func(x):
 def calc(x):
     return 3  + math.cos(x) - math.exp(x)
 
-def newton(a,b) :
+def NewtonRaphson(a,b) :
     if (func(a) * func(b) < 0):
         m = (a + b) / 2
     else:
@@ -18,6 +18,6 @@ def newton(a,b) :
             break
         m=m-h
     print("The value of root is : ", "%.8f" % m)
-A=0
-B=0.5
-newton(A, B)
+A = 0
+B = 0.5
+NewtonRaphson(A, B)
